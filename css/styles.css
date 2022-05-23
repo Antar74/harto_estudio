@@ -11622,3 +11622,12 @@ footer a:hover, footer a:active, footer a:focus {
     max-width: 17rem;
   }
 }
+
+
+
+.circular {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 50%;
+}
