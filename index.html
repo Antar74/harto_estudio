@@ -271,24 +271,24 @@
 
 
   <!-- slick slider-->
-  <div class="slider">
+  <div class="lazy">
 <div>
-<img src="http://kenwheeler.github.io/slick/img/fonz1.png" />
+<img data-lazy="http://kenwheeler.github.io/slick/img/fonz1.png"/>
 </div>
 <div>
-<img src="http://kenwheeler.github.io/slick/img/fonz2.png" />
+<img data-lazy="http://kenwheeler.github.io/slick/img/fonz2.png"/>
 </div>
 <div>
-<img src="http://kenwheeler.github.io/slick/img/fonz3.png" />
+<img data-lazy="http://kenwheeler.github.io/slick/img/fonz3.png"/>
 </div>
 <div>
-<img src="http://kenwheeler.github.io/slick/img/fonz1.png" />
+<img data-lazy="http://kenwheeler.github.io/slick/img/fonz4.png"/>
 </div>
 <div>
-<img src="http://kenwheeler.github.io/slick/img/fonz2.png" />
+<img data-lazy="http://kenwheeler.github.io/slick/img/fonz5.png"/>
 </div>
 <div>
-<img src="http://kenwheeler.github.io/slick/img/fonz3.png" />
+<img data-lazy="http://kenwheeler.github.io/slick/img/fonz6.png"/>
 </div>
 </div>
 
@@ -345,12 +345,13 @@
 
           <script type="text/javascript">
             $(document).ready(function(){
-              $('.slider').slick({
-                slidesToShow: 1,
-                dots: true,
-                infinite: true,
-                cssEase: 'linear'
-              });
+
+
+$('.lazy').slick({
+  lazyLoad: 'ondemand',
+  slidesToShow: 3,
+  slidesToScroll: 1
+});
 
             });
           </script>
