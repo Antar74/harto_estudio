@@ -270,13 +270,29 @@
         </section> -->
 
 
-  <!-- slick slider
-          <div class="your-class">
-            <div>your content</div>
-            <div>your content</div>
-            <div>your content</div>
-          </div>
--->
+  <!-- slick slider-->
+  <div class="slider">
+<div>
+<img src="http://kenwheeler.github.io/slick/img/fonz1.png" />
+</div>
+<div>
+<img src="http://kenwheeler.github.io/slick/img/fonz2.png" />
+</div>
+<div>
+<img src="http://kenwheeler.github.io/slick/img/fonz3.png" />
+</div>
+<div>
+<img src="http://kenwheeler.github.io/slick/img/fonz1.png" />
+</div>
+<div>
+<img src="http://kenwheeler.github.io/slick/img/fonz2.png" />
+</div>
+<div>
+<img src="http://kenwheeler.github.io/slick/img/fonz3.png" />
+</div>
+</div>
+
+
 
         <!-- Footer-->
         <footer class="bg-black text-center py-5">
@@ -329,8 +345,12 @@
 
           <script type="text/javascript">
             $(document).ready(function(){
-              $('.your-class').slick({
-                setting-name: setting-value
+              $('.slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                dots: true,
+                infinite: true,
+                cssEase: 'linear'
               });
             });
           </script>
