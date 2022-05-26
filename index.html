@@ -265,6 +265,8 @@
                                 <img data-lazy="assets/img/H_e-portfolio-casagrande-1.png" class="img-fluid">
                               </div>
                             </div>
+                            <img scr="assets/img/H_e-UI-flecha-prev.png" class="prev">
+                            <img scr="assets/img/H_e-UI-flecha-next.png" class="next">
                             <div class="pb-5 small d-flex align-items-end">
                               <img src="assets\img\H_e-UI-flecha-arriba-corta.png" class="img-fluid">
                               Diseño de etiqueta<br/>(Casa Grande, 2017)
@@ -393,12 +395,15 @@ $('.lazy').slick({
   infinite: true,
   speed: 500,
   cssEase: 'ease-out',
-  prevArrow: '<img class="a-left control-c prev slick-prev" src="assets/img/H_e-UI-flecha-prev.png">',
-  nextArrow: '<img class="a-right control-c next slick-next" src="assets/img/H_e-UI-flecha-next.png">'
+  prevArrow: $('.prev'),
+  nextArrow: $('.next')
 });
 
             });
           </script>
+<!--
+  prevArrow: '<img class="a-left control-c prev slick-prev" src="assets/img/H_e-UI-flecha-prev.png">',
+  nextArrow: '<img class="a-right control-c next slick-next" src="assets/img/H_e-UI-flecha-next.png">' -->
 
     </body>
 </html>
