@@ -2,12 +2,13 @@
 .slide-arrow{
   position: absolute;
   bottom: -20px;
+  cursor: pointer;
 }
 .prev-arrow{
-  right: -10px;
+  right: 30px;
 }
 .next-arrow{
-  right: -40px;
+  right: 0px;
 }
 .circular {
   width: 128px;
