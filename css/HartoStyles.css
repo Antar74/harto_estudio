@@ -1,0 +1,11 @@
+.control-c {
+    width: 20px;
+    height: 10px;
+}
+
+.circular {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 50%;
+}
