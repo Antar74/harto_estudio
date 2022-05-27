@@ -26,8 +26,11 @@
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
+        <!-- AOS animation library -->
+          <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     </head>
-    <body id="page-top">
+    <body id="page-top" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
             <div class="container px-5">
@@ -66,7 +69,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 d-flex flex-column">
-                      <img src="assets\img\CCE-2022---MAYO---Ovillo-de-grillos_swipe1.jpeg" class="img-fluid">
+                      <img src="assets\img\CCE-2022---MAYO---Ovillo-de-grillos_swipe1.jpeg" class="img-fluid aos-init aos-animate" data-aos="fade-up">
                       <div class="mt-3 small d-flex align-items-end">
                         <img src="assets\img\H_e-UI-flecha-arriba.png" class="img-fluid">
                         Ilustración (CCE, 2022)
@@ -259,17 +262,21 @@
                           <div class="col-md-6">
                             <div class="lazy">
                               <div>
-                                <img data-lazy="assets/img/H_e-portfolio-casagrande-0.png" class="img-fluid">
+                                <img data-lazy="assets/img/H_e-portfolio-Almanaque-0.png" class="img-fluid">
                               </div>
                               <div>
-                                <img data-lazy="assets/img/H_e-portfolio-casagrande-1.png" class="img-fluid">
+                                <img data-lazy="assets/img/H_e-portfolio-Almanaque-1.png" class="img-fluid">
+                              </div>
+                              <div>
+                                <img data-lazy="assets/img/H_e-portfolio-Almanaque-2.png" class="img-fluid">
+                              </div>
+                              <div>
+                                <img data-lazy="assets/img/H_e-portfolio-Almanaque-3.png" class="img-fluid">
                               </div>
                             </div>
-                            <img scr="assets/img/H_e-UI-flecha-prev.png" class="prev">
-                            <img scr="assets/img/H_e-UI-flecha-next.png" class="next">
                             <div class="pb-5 small d-flex align-items-end">
                               <img src="assets\img\H_e-UI-flecha-arriba-corta.png" class="img-fluid">
-                              Diseño de etiqueta<br/>(Casa Grande, 2017)
+                              Diseño de etiquetas<br/>(Casa Grande, 2018)
                             </div>
                           </div>
                         </div>
@@ -387,6 +394,17 @@
           <script type="text/javascript" src="js/HartoScripts.js"></script>
 <!--
    -->
+   <!-- AOS animation library -->
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+   			AOS.init({
+   				easing: 'ease-out-back',
+   				duration: 1000
+   			});
+   </script>
+
+   <!-- AOS animation library end-->
 
     </body>
 </html>
