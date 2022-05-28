@@ -1,4 +1,7 @@
 
+.hand-cursor{
+  cursor: pointer;
+}
 .slide-arrow{
   position: absolute;
   bottom: -20px;
