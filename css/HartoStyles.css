@@ -19,3 +19,7 @@
   object-fit: cover;
   border-radius: 50%;
 }
+
+.slick-dots {
+  text-align: right;
+}
