@@ -20,6 +20,6 @@
   border-radius: 50%;
 }
 
-.slick-dots {
+.slick-slider .slick-dots {
   text-align: right;
 }
