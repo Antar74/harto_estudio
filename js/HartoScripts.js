@@ -12,4 +12,12 @@ $(document).ready(function(){
     prevArrow: '<img src="assets/img/H_e-UI-flecha-prev.png" class="slide-arrow prev-arrow">',
     nextArrow: '<img src="assets/img/H_e-UI-flecha-next.png" class="slide-arrow next-arrow">'
   });
+
+  $('.autoplay').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  });
+
 });
