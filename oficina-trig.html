@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/trig-js/src/trig-animations.min.css">
     <script src="https://cdn.jsdelivr.net/npm/trig-js/src/trig.min.js"></script>
 
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <style>
         * {
             margin: 0;
@@ -402,7 +403,7 @@
             <!-- Right Column - Projects -->
             <div class="projects-column">
                 <!-- Project 1: CCE Montevideo -->
-                <div class="project-card fadeIn" data-trig>
+                <div class="project-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                     <img src="assets/img/cce-leer.png" alt="CCE Montevideo - Leer te da alas" class="project-image">
                     <p class="card-label">CCE Montevideo</p>
                 </div>
@@ -430,6 +431,10 @@
         <div style="height:1000px;">test</div>
     </div>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
    
 </body>
 </html>
