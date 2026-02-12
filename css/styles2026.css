@@ -8,7 +8,8 @@
 }
 
 :root {
-    --bg-dark: #262626;
+    --bg-dark: #202020;
+    --bg-dark2: #2a2a2a;
     --text-white: #ffffff;
     --text-gray: #9a9a9a;
     --link-blue: #4a90e2;
@@ -25,7 +26,10 @@ body {
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 60px 80px;
+    padding: 100px 80px;
+}
+#buro.container {
+background-color: var(--bg-dark2);
 }
 
 /* Header Section - Absolute positioning from hero */
@@ -108,6 +112,9 @@ body {
 
 /* Small screens: ensure nav doesn't conflict with logo */
 @media (max-width: 600px) {
+    .container{
+        padding: 60px 80px;
+    }
     .nav {
         right: 15px;
         top: 30px;
