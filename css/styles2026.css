@@ -11,8 +11,6 @@
     --bg-dark: #202020;
     --bg-dark2: #2a2a2a;
     --text-white: #ffffff;
-    --text-gray: #9a9a9a;
-    --link-blue: #4a90e2;
 }
 
 body {
@@ -259,8 +257,6 @@ background-color: var(--bg-dark2);
     }
 
     .projects-column {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
         gap: 15px;
     }
 

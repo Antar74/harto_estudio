@@ -1,0 +1,196 @@
+/* ============================================
+   CASE STUDY SECTIONS - Full Width Video
+   ============================================ */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.casestudy {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.casestudy__video-wrap {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+.casestudy__video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ============================================
+   DESKTOP: Full Viewport Height Video + Stacked Overlay
+   ============================================ */
+
+@media (min-width: 768px) {
+    .casestudy {
+        height: auto;
+        min-height: auto;
+    }
+    
+    .casestudy__video-wrap {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+    }
+    
+    .casestudy__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .casestudy__overlay {
+        position: relative;
+        z-index: 2;
+        background: #2A2A2A;
+        padding: 24px 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        width: fit-content;
+    }
+
+    .casestudy--align-left .casestudy__overlay {
+        text-align: left;
+    }
+
+    .casestudy--align-right .casestudy__overlay {
+        text-align: right;
+    }
+}
+
+/* ============================================
+   MOBILE/TABLET: Full viewport height with overlay below
+   ============================================ */
+
+@media (max-width: 767px) {
+    .casestudy {
+        height: auto;
+        min-height: auto;
+    }
+    
+    .casestudy__video-wrap {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+    }
+    
+    .casestudy__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .casestudy__overlay {
+        position: relative;
+        z-index: 2;
+        background: #2A2A2A;
+        padding: 20px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+    }
+
+    .casestudy--align-left .casestudy__overlay,
+    .casestudy--align-right .casestudy__overlay {
+        text-align: left;
+    }
+}
+
+/* ============================================
+   ALIGNMENT MODIFIERS
+   ============================================ */
+
+.casestudy {
+    display: flex;
+    flex-direction: column;
+}
+
+.casestudy--align-right {
+    align-items: flex-end;
+}
+
+.casestudy--align-left {
+    align-items: flex-start;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+.casestudy__title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    color: #FFFFFF;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.casestudy__categories {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
+    margin: 0;
+}
+
+.casestudy__link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.casestudy__arrow {
+    display: inline-block;
+}
+
+/* ============================================
+   RESPONSIVE TYPOGRAPHY
+   ============================================ */
+
+@media (max-width: 480px) {
+    .casestudy__overlay {
+        padding: 16px 20px;
+    }
+    
+    .casestudy__title {
+        font-size: 24px;
+    }
+    
+    .casestudy__categories {
+        font-size: 13px;
+    }
+    
+    .casestudy__link {
+        font-size: 18px;
+    }
+}

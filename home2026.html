@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harto_estudio</title>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="css/styles2026-v2.css">
+    <link rel="stylesheet" href="css/casestudy-v2.css">
+    
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+</head>
+<body class="loading">
+    <!-- SVG Filter for Distorted Line Effect -->
+    <svg style="position:absolute;width:0;height:0;pointer-events:none;">
+        <defs>
+            <filter id="distorted-line-filter" x="-50%" y="-200%" width="200%" height="500%">
+                <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="5" result="warp" />
+                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="20" in="SourceGraphic" in2="warp" />
+            </filter>
+        </defs>
+    </svg>
+
+    <!-- ==================== -->
+    <!-- HERO SECTION -->
+    <!-- ==================== -->
+    <section class="hero" aria-label="Hero">
+        <div class="hero__video-wrap">
+            <video id="heroVideo" class="hero__video" autoplay muted loop playsinline>
+                <source src="assets/videos/h_e_hero-prueba1.mp4" type="video/mp4">
+                <source src="assets/videos/h_e_hero-prueba1.webm" type="video/webm">
+            </video>
+            <div class="hero__overlay" aria-hidden="true"></div>
+            <div class="hero__background-rectangle" aria-hidden="true"></div>
+        </div>
+        <div class="hero__content">
+            <div class="hero__logo">
+                <h1 class="hero__logo-text">
+                    <span class="hero__logo-line gtext" data-text="Harto">Harto</span>
+                    <span class="hero__logo-line gtext" data-text="_">_</span>
+                    <span class="hero__logo-line gtext" data-text="estudio">estudio</span>
+                </h1>
+            </div>
+            <nav class="hero__nav" aria-label="Main navigation">
+                <button class="hero__nav-button hero__nav-button--first distorted-link" type="button" data-filter="distorted-line-filter" onclick="document.getElementById('manifiesto').scrollIntoView({behavior: 'smooth'})">
+                    <span class="distorted-link__text">Manifiesto</span>
+                    <span class="distorted-link__line"></span>
+                </button>
+                <div class="hero__nav-divider" aria-hidden="true"></div>
+                <button class="hero__nav-button hero__nav-button--second distorted-link" type="button" data-filter="distorted-line-filter" onclick="document.getElementById('oficina').scrollIntoView({behavior: 'smooth'})">
+                    <span class="distorted-link__text">Oficina de diseño</span>
+                    <span class="distorted-link__line"></span>
+                </button>
+                <div class="hero__nav-divider" aria-hidden="true"></div>
+                <button class="hero__nav-button hero__nav-button--third distorted-link" type="button" data-filter="distorted-line-filter" onclick="document.getElementById('buro').scrollIntoView({behavior: 'smooth'})">
+                    <span class="distorted-link__text">Buró artístico</span>
+                    <span class="distorted-link__line"></span>
+                </button>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ==================== -->
+    <!-- MANIFIESTO SECTION -->
+    <!-- ==================== -->
+    <section class="manifesto" id="manifiesto">
+        <div class="container">
+            <div class="manifesto__grid">
+                <header class="manifesto__header">
+                    <h1>Harto_estudio</h1>
+                    <h2>Manifiesto</h2>
+                </header>
+                
+                <p class="manifesto__lead">Somos un buró de producción cultural. Operamos en la intersección entre la precisión clínica de la cuadrícula y la energía cruda del mundo físico.</p>
+                
+                <p class="philosophy">La oficina es el pilar de nuestra disciplina, proporcionando estrategia, branding y arquitectura digital para diseñar confiabilidad.<br><br>Nuestro buró es el hogar del caos, representando a artistas visionarios para crear instalaciones inmersivas y "confluencias culturales".<br><br>No solo creamos sitios web y logotipos, creamos autenticidad y diseñamos experiencias. Transferimos valor cultural.<br><br>Si quieres una plantilla, no queremos tu briefing; si quieres un mundo entero, queremos tu convicción. Nuestro emblema no son los píxeles ni el papel, sino la emoción y la memoria.</p>
+                
+                <figure class="project project--1">
+                    <div class="project__img-wrap">
+                        <img src="assets/img/animal mvdlab.png" alt="Taller ANIMAL">
+                    </div>
+                    <figcaption>Taller ANIMAL @ MoMLab + MVDLab / <span class="year-highlight year-highlight--green">2025</span></figcaption>
+                </figure>
+                
+                <figure class="project project--2">
+                    <div class="project__img-wrap">
+                        <img src="assets/img/afiche red ceibal.png" alt="Afiche Centro RED">
+                    </div>
+                    <figcaption>Afiche Centro RED @ Plan Ceibal / <span class="year-highlight year-highlight--yellow">2020</span></figcaption>
+                </figure>
+                
+                <figure class="project project--3">
+                    <div class="project__img-wrap">
+                        <img src="assets/img/fiesta rara.png" alt="Fiesta RARA">
+                    </div>
+                    <figcaption>Fiesta RARA @ Multimostro <span class="year-highlight year-highlight--green">2019</span></figcaption>
+                </figure>
+                
+                <figure class="project project--4">
+                    <div class="project__img-wrap">
+                        <img src="assets/img/fiesta rara 2.png" alt="Fiesta RARA">
+                    </div>
+                    <figcaption>Fiesta RARA @ Multimostro <span class="year-highlight year-highlight--yellow">2019</span></figcaption>
+                </figure>
+                
+                <figure class="project project--5">
+                    <div class="project__img-wrap">
+                        <img src="assets/img/coco-14.png" alt="Diseño de sala">
+                    </div>
+                    <figcaption>Diseño de sala para Colectiva COCO @ CCE / <span class="year-highlight year-highlight--green">2021</span></figcaption>
+                </figure>
+                
+                <figure class="project project--6">
+                    <div class="project__img-wrap">
+                        <img src="assets/img/liceo frances.png" alt="Visita virtual">
+                    </div>
+                    <figcaption>Visita virtual @ Liceo Francés / <span class="year-highlight year-highlight--yellow">2023</span></figcaption>
+                </figure>
+                
+                <figure class="project project--7">
+                    <div class="project__img-wrap">
+                        <img src="assets/img/cce-2022.png" alt="Comunicación">
+                    </div>
+                    <figcaption>Comunicación @ CCE / <span class="year-highlight year-highlight--green">2022</span></figcaption>
+                </figure>
+                
+                <figure class="project project--8">
+                    <div class="project__img-wrap">
+                        <img src="assets/img/espectadores efimeros.png" alt="Espectadores efímeros">
+                    </div>
+                    <figcaption>Espectadores efímeros @ EAC <span class="year-highlight year-highlight--yellow">2018</span></figcaption>
+                </figure>
+                
+                <p class="manifesto__statement">CREEMOS EN EL PODER CONMOVEDOR DE UNAS MANOS REFLEXIVAS Y EN LA ESCALA MONUMENTAL DE LA FRONTERA DIGITAL</p>
+                
+                <p class="manifesto__tagline">Creado por artistas.<br>Completado por vos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== -->
+    <!-- OFICINA SECTION -->
+    <!-- ==================== -->
+    <section class="oficina" id="oficina">
+        <div class="oficina__container">
+            <header class="oficina__header">
+                <h1 class="oficina__title">
+                    <span class="oficina__title-line"><span class="gtext" data-text="OFICINA DE">OFICINA DE</span></span>
+                    <span class="oficina__title-line"><span class="gtext" data-text="DISEÑO">DISEÑO</span></span>
+                </h1>
+                <nav class="oficina__nav">
+                    <a href="#manifiesto" class="distorted-link" data-filter="distorted-line-filter">
+                        <span class="distorted-link__text">Manifiesto</span>
+                        <span class="distorted-link__line"></span>
+                    </a>
+                    <div class="oficina__nav-divider"></div>
+                    <a href="#oficina" class="distorted-link" data-filter="distorted-line-filter">
+                        <span class="distorted-link__text">Inicio</span>
+                        <span class="distorted-link__line"></span>
+                    </a>
+                    <div class="oficina__nav-divider"></div>
+                    <a href="#buro" class="distorted-link" data-filter="distorted-line-filter">
+                        <span class="distorted-link__text">Buró artístico</span>
+                        <span class="distorted-link__line"></span>
+                    </a>
+                </nav>
+            </header>
+            
+            <div class="oficina__grid">
+                <div class="oficina__text-col">
+                    <p class="oficina__text oficina__text--intro">
+                        Como mediadora cultural, la oficina de diseño entrelaza las visiones de artistas y creadores con la singularidad histórica, simbólica y organizacional de cada institución.
+                    </p>
+                    <p class="oficina__text">
+                        Nos distanciamos de esquemas estandarizados para trabajar en la construcción de infraestructuras culturales digitales, desarrolladas a través de plataformas inmersivas web y sistemas visuales relacionales. Esta metodología establece un diálogo activo entre el rigor técnico y la vitalidad de las prácticas artísticas contemporáneas, generando espacios donde la forma, el contenido y el contexto se sostienen mutuamente.
+                    </p>
+                    <div class="oficina__links">
+                        <a href="#" class="oficina__link">
+                            <span class="oficina__arrow">></span>
+                            <span class="distorted-link" data-filter="distorted-line-filter">
+                                <span class="distorted-link__text">Portafolio</span>
+                                <span class="distorted-link__line"></span>
+                            </span>
+                        </a>
+                        <a href="#casos-de-estudio" class="oficina__link">
+                            <span class="oficina__arrow">></span>
+                            <span class="distorted-link" data-filter="distorted-line-filter">
+                                <span class="distorted-link__text">Casos de estudio</span>
+                                <span class="distorted-link__line"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="oficina__projects">
+                    <div class="oficina__card aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                        <img src="assets/img/cce-leer.png" alt="CCE Montevideo - Leer te da alas" class="oficina__card-img">
+                        <p class="oficina__card-label">CCE Montevideo</p>
+                    </div>
+                    
+                    <div class="oficina__card aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                        <img src="assets/img/cce-ovillo.png" alt="de VIERNES" class="oficina__card-img">
+                        <p class="oficina__card-label">de VIERNES</p>
+                    </div>
+                    
+                    <div class="oficina__card aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                        <img src="assets/img/ceibal-red.png" alt="Plan Ceibal" class="oficina__card-img">
+                        <p class="oficina__card-label">Plan Ceibal</p>
+                    </div>
+                    
+                    <div class="oficina__card aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                        <img src="assets/img/cebal-microbit.png" alt="Visita virtual" class="oficina__card-img">
+                        <p class="oficina__card-label">Visita virtual</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== -->
+    <!-- BURO SECTION -->
+    <!-- ==================== -->
+    <section class="oficina oficina--alt" id="buro">
+        <div class="oficina__container">
+            <header class="oficina__header">
+                <h1 class="oficina__title">
+                    <span class="oficina__title-line"><span class="gtext" data-text="Buró">Buró</span></span>
+                    <span class="oficina__title-line"><span class="gtext" data-text="artístico">artístico</span></span>
+                </h1>
+                <nav class="oficina__nav">
+                    <a href="#manifiesto" class="distorted-link" data-filter="distorted-line-filter">
+                        <span class="distorted-link__text">Manifiesto</span>
+                        <span class="distorted-link__line"></span>
+                    </a>
+                    <div class="oficina__nav-divider"></div>
+                    <a href="#oficina" class="distorted-link" data-filter="distorted-line-filter">
+                        <span class="distorted-link__text">Oficina</span>
+                        <span class="distorted-link__line"></span>
+                    </a>
+                    <div class="oficina__nav-divider"></div>
+                    <a href="#buro" class="distorted-link" data-filter="distorted-line-filter">
+                        <span class="distorted-link__text">Inicio</span>
+                        <span class="distorted-link__line"></span>
+                    </a>
+                </nav>
+            </header>
+            
+            <div class="oficina__grid">
+                <div class="oficina__text-col">
+                    <p class="oficina__text oficina__text--intro">
+                        Acompaña y articula prácticas creativas contemporáneas diversas, promoviendo confluencias culturales que integran múltiples voces en narrativas visuales sensibles al contexto y al presente.
+                    </p>
+                    <p class="oficina__text">
+                        Al vincular las poéticas de los creadores con marcos institucionales específicos, el buró genera valor cultural situado a través de experiencias cuidadosamente producidas. Su enfoque combina exploración artística, responsabilidad ética y solidez técnica, dando lugar a configuraciones artísticas integrales con proyección en el campo cultural contemporáneo.
+                    </p>
+                    <div class="oficina__links">
+                        <a href="#" class="oficina__link">
+                            <span class="oficina__arrow">></span>
+                            <span class="distorted-link" data-filter="distorted-line-filter">
+                                <span class="distorted-link__text">Portafolio</span>
+                                <span class="distorted-link__line"></span>
+                            </span>
+                        </a>
+                        <a href="#casos-de-estudio" class="oficina__link">
+                            <span class="oficina__arrow">></span>
+                            <span class="distorted-link" data-filter="distorted-line-filter">
+                                <span class="distorted-link__text">Casos de estudio</span>
+                                <span class="distorted-link__line"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="oficina__projects">
+                    <div class="oficina__card aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                        <img src="assets/img/perkinson0.png" alt="Perkinson" class="oficina__card-img">
+                        <p class="oficina__card-label">Perkinson</p>
+                    </div>
+                    
+                    <div class="oficina__card aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                        <img src="assets/img/adela0.png" alt="Adela Casacuberta" class="oficina__card-img">
+                        <p class="oficina__card-label">Adela Casacuberta</p>
+                    </div>
+                    
+                    <div class="oficina__card aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                        <img src="assets/img/hema0.png" alt="Hematoma" class="oficina__card-img">
+                        <p class="oficina__card-label">Hematoma</p>
+                    </div>
+                    
+                    <div class="oficina__card aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                        <img src="assets/img/ela0.png" alt="Ela Monstruo" class="oficina__card-img">
+                        <p class="oficina__card-label">Ela Monstruo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== -->
+    <!-- CASE STUDIES -->
+    <!-- ==================== -->
+    <section class="casestudy casestudy--align-right" id="casos-de-estudio">
+        <div class="casestudy__video-wrap">
+            <video class="casestudy__video" autoplay muted loop playsinline>
+                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <div class="casestudy__overlay">
+            <h3 class="casestudy__title">Animal</h3>
+            <p class="casestudy__categories">id / website / redes</p>
+            <a href="animal.html" class="casestudy__link">
+                <span class="casestudy__arrow">></span>
+                <span class="distorted-link" data-filter="distorted-line-filter">
+                    <span class="distorted-link__text">ver</span>
+                    <span class="distorted-link__line"></span>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <section class="casestudy casestudy--align-left">
+        <div class="casestudy__video-wrap">
+            <video class="casestudy__video" autoplay muted loop playsinline>
+                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <div class="casestudy__overlay">
+            <h3 class="casestudy__title">Liceo Francés</h3>
+            <p class="casestudy__categories">id / website / video / colateral</p>
+            <a href="liceo.html" class="casestudy__link">
+                <span class="casestudy__arrow">></span>
+                <span class="distorted-link" data-filter="distorted-line-filter">
+                    <span class="distorted-link__text">ver</span>
+                    <span class="distorted-link__line"></span>
+                </span>
+            </a>
+        </div>
+    </section>
+    
+    <!-- ==================== -->
+    <!-- ANIMATION SCRIPTS -->
+    <!-- ==================== -->
+    
+    <!-- Hero Scripts -->
+    <script src="js/hero.js"></script>
+    <script src="js/hero-sliced.js"></script>
+    
+    <!-- Manifesto Scroll Animations (GSAP/Lenis) -->
+    <script src="js/scroll-animations.js"></script>
+    
+    <!-- AOS Animations (Oficina/Buro) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Distorted Line Hover Effect -->
+    <script>
+        class DistortedLink {
+            constructor(el) {
+                this.DOM = { el: el };
+                this.filterId = `#${el.dataset.filter}`;
+                this.DOM.feTurbulence = document.querySelector(`${this.filterId} > feTurbulence`);
+                this.primitiveValues = { turbulence: 0.05 };
+
+                this.createTimeline();
+                this.initEvents();
+            }
+
+            createTimeline() {
+                this.tl = gsap.timeline({
+                    paused: true,
+                    onStart: () => {
+                        this.DOM.line.style.filter = `url(${this.filterId})`;
+                    },
+                    onComplete: () => {
+                        this.DOM.line.style.filter = 'none';
+                    }
+                });
+
+                this.tl.eventCallback('onUpdate', () => {
+                    this.DOM.feTurbulence.setAttribute('baseFrequency', this.primitiveValues.turbulence);
+                });
+
+                this.tl.to(this.primitiveValues, {
+                    duration: 0.3,
+                    ease: 'steps(12)',
+                    turbulence: 0
+                });
+            }
+
+            initEvents() {
+                this.DOM.line = this.DOM.el.querySelector('.distorted-link__line');
+                
+                this.DOM.el.addEventListener('mouseenter', () => {
+                    this.DOM.line.style.opacity = '1';
+                    this.tl.restart();
+                });
+                
+                this.DOM.el.addEventListener('mouseleave', () => {
+                    this.tl.progress(1).kill();
+                    this.DOM.line.style.opacity = '0';
+                    this.DOM.line.style.filter = 'none';
+                });
+            }
+        }
+
+        document.querySelectorAll('.distorted-link').forEach(el => new DistortedLink(el));
+    </script>
+
+<!-- Footer (mirroring the reference) -->
+<div>
+  <!-- Include the footer markup to render on the page -->
+  <!-- We reuse the existing DEV/footer.html structure for consistency -->
+</div>
+<!-- FOOTER START -->
+<footer class="footer" role="contentinfo" aria-label="Footer">
+  <div class="container footer__inner">
+    <div class="footer__grid">
+      <div class="footer__col" style="display:flex; align-items:flex-start;">
+        <div class="footer__logo" style="font-family: var(--font-primary); font-weight: 900; font-size: 12rem; line-height: 0.9;">
+          Harto
+        </div>
+      </div>
+      <div class="footer__col" style="display:flex; flex-direction:column; justify-content:center;">
+        <h2 class="footer__title" style="font-family: var(--font-primary); font-weight: 900; font-size: 2rem; margin: 0 0 .5rem;">
+          Refugio para visiones rebeldes
+        </h2>
+        <p class="footer__subtitle" style="font-family: var(--font-primary); font-weight: 400; font-size: 1.125rem; line-height: 1.6; margin: 0;">
+          Transformemos diferencias en potencia creativa. Realicemos juntos dispositivos gráficos, espaciales, performativos.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="text-align:center;">
+    <div class="footer__contact" style="font-family: var(--font-primary); font-weight: 700; font-size: 1.125rem; margin-top: 1.25rem;">
+      &gt; Escribe a contacto@hartostudio.com
+    </div>
+    <div class="footer__address" style="font-family: var(--font-primary); font-size: 1.125rem; line-height: 1.6; margin-top: 0.25rem;">
+      Colonia 1767<br>Montevideo, Uruguay.
+    </div>
+  </div>
+  <div class="footer__bar" style="height: 14px; width: 110px; background: #000; margin: 34px auto 0;"></div>
+</footer>
+<!-- FOOTER END -->
+
+</body>
+</html>
