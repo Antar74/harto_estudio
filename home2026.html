@@ -51,11 +51,6 @@
                 </h1>
             </div>
             <nav class="hero__nav" aria-label="Main navigation">
-                <button class="hero__nav-button hero__nav-button--first distorted-link" type="button" data-filter="distorted-line-filter" onclick="document.getElementById('manifiesto').scrollIntoView({behavior: 'smooth'})">
-                    <span class="distorted-link__text">Manifiesto</span>
-                    <span class="distorted-link__line"></span>
-                </button>
-                <div class="hero__nav-divider" aria-hidden="true"></div>
                 <button class="hero__nav-button hero__nav-button--second distorted-link" type="button" data-filter="distorted-line-filter" onclick="document.getElementById('oficina').scrollIntoView({behavior: 'smooth'})">
                     <span class="distorted-link__text">Oficina de diseño</span>
                     <span class="distorted-link__line"></span>
@@ -77,7 +72,6 @@
             <div class="manifesto__grid">
                 <header class="manifesto__header">
                     <h1>Harto_estudio</h1>
-                    <h2>Manifiesto</h2>
                 </header>
                 
                 <p class="manifesto__lead">Somos un buró de producción cultural. Operamos en la intersección entre la precisión clínica de la cuadrícula y la energía cruda del mundo físico.</p>
@@ -158,16 +152,11 @@
                     <span class="oficina__title-line"><span class="gtext" data-text="DISEÑO">DISEÑO</span></span>
                 </h1>
                 <nav class="oficina__nav">
-                    <a href="#manifiesto" class="distorted-link" data-filter="distorted-line-filter">
-                        <span class="distorted-link__text">Manifiesto</span>
-                        <span class="distorted-link__line"></span>
-                    </a>
-                    <div class="oficina__nav-divider"></div>
                     <a href="#oficina" class="distorted-link" data-filter="distorted-line-filter">
                         <span class="distorted-link__text">Inicio</span>
                         <span class="distorted-link__line"></span>
                     </a>
-                    <div class="oficina__nav-divider"></div>
+                    <div class="nav-divider"></div>
                     <a href="#buro" class="distorted-link" data-filter="distorted-line-filter">
                         <span class="distorted-link__text">Buró artístico</span>
                         <span class="distorted-link__line"></span>
@@ -237,16 +226,11 @@
                     <span class="oficina__title-line"><span class="gtext" data-text="artístico">artístico</span></span>
                 </h1>
                 <nav class="oficina__nav">
-                    <a href="#manifiesto" class="distorted-link" data-filter="distorted-line-filter">
-                        <span class="distorted-link__text">Manifiesto</span>
-                        <span class="distorted-link__line"></span>
-                    </a>
-                    <div class="oficina__nav-divider"></div>
                     <a href="#oficina" class="distorted-link" data-filter="distorted-line-filter">
                         <span class="distorted-link__text">Oficina</span>
                         <span class="distorted-link__line"></span>
                     </a>
-                    <div class="oficina__nav-divider"></div>
+                    <div class="nav-divider"></div>
                     <a href="#buro" class="distorted-link" data-filter="distorted-line-filter">
                         <span class="distorted-link__text">Inicio</span>
                         <span class="distorted-link__line"></span>
@@ -450,7 +434,7 @@
             
             <!-- Right column: Content -->
             <div class="footer__content-col">
-                <a href="#" class="footer__back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+                <a href="#inicio" class="footer__back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
                     <span class="footer__back-to-top-arrow">↑</span>
                     <span class="footer__back-to-top-text">Inicio</span>
                 </a>
