@@ -34,8 +34,9 @@
     <!-- ==================== -->
     <section class="hero" aria-label="Hero">
         <div class="hero__video-wrap">
+            <div class="hero__overlay"></div>
             <video id="heroVideo" class="hero__video" autoplay muted loop playsinline>
-                <source src="assets/videos/h_e_hero-prueba1.mp4" type="video/mp4">
+                <source src="assets/videos/IMPROBABLE2-EAC-2025-v3.mp4" type="video/mp4">
                 <source src="assets/videos/h_e_hero-prueba1.webm" type="video/webm">
             </video>
             <div class="hero__overlay" aria-hidden="true"></div>
@@ -420,6 +421,20 @@
 
         document.querySelectorAll('.distorted-link').forEach(el => new DistortedLink(el));
     </script>
+    
+    <!-- Pixel noise video overlay -->
+     <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const hero = document.querySelector('.hero');
+        const video = document.getElementById('heroVideo');
+        const overlay = document.querySelector('.hero__overlay');
+        if (!hero || !video) return;
+        new IntersectionObserver(e => {
+            e[0].isIntersecting ? (video.play(), overlay.classList.add('is-visible')) : (video.pause(), overlay.classList.remove('is-visible'));
+        }, {threshold: 0.1}).observe(hero);
+    });
+    </script>
+    
 
 
 <!-- FOOTER START -->
