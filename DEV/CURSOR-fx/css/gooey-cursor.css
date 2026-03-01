@@ -1,0 +1,77 @@
+/* ============================================
+   GOOEY CURSOR EFFECT - Squared Cells Version
+   ============================================ */
+
+:root {
+    --columns: 25;
+    --cursor-blend-mode: difference;
+    --cursor-radius: 0 !important;
+    --cursor-bg: #00F0FF;
+    /* --cursor-ttl: 0.3;  Uncomment to adjust trail length (higher = longer trail) */
+}
+
+.cursor {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: var(--cursor-blend-mode);
+    --size: calc(100vw / var(--columns));
+}
+
+.cursor__inner {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), var(--size));
+    width: 100%;
+    height: 100%;
+    /* 
+       TO ENABLE GOOEY FILTER: Uncomment the line below
+       Note: This will add rounded edges to the cells (gooey effect)
+    */
+    /* filter: url(#gooey); */
+}
+
+.cursor__inner-box {
+    width: var(--size);
+    height: var(--size);
+    background: var(--cursor-bg);
+    opacity: 0;
+    border-radius: var(--cursor-radius) !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    will-change: opacity;
+}
+
+/* Force all possible border-radius to 0 */
+*, *::before, *::after {
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+}
+
+/* Simplified version for touch devices */
+@media (hover: none) and (pointer: coarse) {
+    .cursor {
+        display: none;
+    }
+}
+
+/* Hide on mobile */
+@media (max-width: 768px) {
+    .cursor {
+        display: none;
+    }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .cursor {
+        display: none;
+    }
+}

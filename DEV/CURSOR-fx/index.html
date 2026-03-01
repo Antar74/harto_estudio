@@ -24,6 +24,17 @@
     <div class="cursor">
         <div class="cursor__inner"></div>
     </div>
+    
+    <!-- SVG Filter for Gooey Effect (outside cursor to be accessible) -->
+    <svg style="position:absolute;width:0;height:0;pointer-events:none;">
+        <defs>
+            <filter id="gooey">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="18" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -7" result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+            </filter>
+        </defs>
+    </svg>
 
     <!-- SVG Filter for Distorted Line Effect -->
     <svg style="position:absolute;width:0;height:0;pointer-events:none;">
@@ -41,8 +52,8 @@
     <section class="hero" aria-label="Hero">
         <div class="hero__video-wrap">
             <video id="heroVideo" class="hero__video" autoplay muted loop playsinline>
-                <source src="assets/videos/IMPROBABLE2-EAC-2025-v3.mp4" type="video/mp4">
-                <source src="assets/videos/h_e_hero-prueba1.webm" type="video/webm">
+                <source src="../../assets/videos/IMPROBABLE2-EAC-2025-v3.mp4" type="video/mp4">
+                <source src="../../assets/videos/h_e_hero-prueba1.webm" type="video/webm">
             </video>
             <div class="hero__background-rectangle" aria-hidden="true"></div>
         </div>
@@ -84,56 +95,56 @@
                 
                 <figure class="project project--1">
                     <div class="project__img-wrap">
-                        <img src="assets/img/animal mvdlab.png" alt="Taller ANIMAL">
+                        <img src="../../assets/img/animal mvdlab.png" alt="Taller ANIMAL">
                     </div>
                     <figcaption>Taller ANIMAL @ MoMLab + MVDLab / <span class="year-highlight year-highlight--green">2025</span></figcaption>
                 </figure>
                 
                 <figure class="project project--2">
                     <div class="project__img-wrap">
-                        <img src="assets/img/afiche red ceibal.png" alt="Afiche Centro RED">
+                        <img src="../../assets/img/afiche red ceibal.png" alt="Afiche Centro RED">
                     </div>
                     <figcaption>Afiche Centro RED @ Plan Ceibal / <span class="year-highlight year-highlight--yellow">2020</span></figcaption>
                 </figure>
                 
                 <figure class="project project--3">
                     <div class="project__img-wrap">
-                        <img src="assets/img/fiesta rara.png" alt="Fiesta RARA">
+                        <img src="../../assets/img/fiesta rara.png" alt="Fiesta RARA">
                     </div>
                     <figcaption>Fiesta RARA @ Multimostro <span class="year-highlight year-highlight--green">2019</span></figcaption>
                 </figure>
                 
                 <figure class="project project--4">
                     <div class="project__img-wrap">
-                        <img src="assets/img/fiesta rara 2.png" alt="Fiesta RARA">
+                        <img src="../../assets/img/fiesta rara 2.png" alt="Fiesta RARA">
                     </div>
                     <figcaption>Fiesta RARA @ Multimostro <span class="year-highlight year-highlight--yellow">2019</span></figcaption>
                 </figure>
                 
                 <figure class="project project--5">
                     <div class="project__img-wrap">
-                        <img src="assets/img/coco-14.png" alt="Diseño de sala">
+                        <img src="../../assets/img/coco-14.png" alt="Diseño de sala">
                     </div>
                     <figcaption>Diseño de sala para Colectiva COCO @ CCE / <span class="year-highlight year-highlight--green">2021</span></figcaption>
                 </figure>
                 
                 <figure class="project project--6">
                     <div class="project__img-wrap">
-                        <img src="assets/img/liceo frances.png" alt="Visita virtual">
+                        <img src="../../assets/img/liceo frances.png" alt="Visita virtual">
                     </div>
                     <figcaption>Visita virtual @ Liceo Francés / <span class="year-highlight year-highlight--yellow">2023</span></figcaption>
                 </figure>
                 
                 <figure class="project project--7">
                     <div class="project__img-wrap">
-                        <img src="assets/img/cce-2022.png" alt="Comunicación">
+                        <img src="../../assets/img/cce-2022.png" alt="Comunicación">
                     </div>
                     <figcaption>Comunicación @ CCE / <span class="year-highlight year-highlight--green">2022</span></figcaption>
                 </figure>
                 
                 <figure class="project project--8">
                     <div class="project__img-wrap">
-                        <img src="assets/img/espectadores efimeros.png" alt="Espectadores efímeros">
+                        <img src="../../assets/img/espectadores efimeros.png" alt="Espectadores efímeros">
                     </div>
                     <figcaption>Espectadores efímeros @ EAC <span class="year-highlight year-highlight--yellow">2018</span></figcaption>
                 </figure>
@@ -196,22 +207,22 @@
                 
                 <div class="oficina__projects">
                     <div class="oficina__card aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                        <img src="assets/img/cce-leer.png" alt="CCE Montevideo - Leer te da alas" class="oficina__card-img">
+                        <img src="../../assets/img/cce-leer.png" alt="CCE Montevideo - Leer te da alas" class="oficina__card-img">
                         <p class="oficina__card-label">CCE Montevideo</p>
                     </div>
                     
                     <div class="oficina__card aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                        <img src="assets/img/cce-ovillo.png" alt="de VIERNES" class="oficina__card-img">
+                        <img src="../../assets/img/cce-ovillo.png" alt="de VIERNES" class="oficina__card-img">
                         <p class="oficina__card-label">de VIERNES</p>
                     </div>
                     
                     <div class="oficina__card aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-                        <img src="assets/img/ceibal-red.png" alt="Plan Ceibal" class="oficina__card-img">
+                        <img src="../../assets/img/ceibal-red.png" alt="Plan Ceibal" class="oficina__card-img">
                         <p class="oficina__card-label">Plan Ceibal</p>
                     </div>
                     
                     <div class="oficina__card aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                        <img src="assets/img/cebal-microbit.png" alt="Visita virtual" class="oficina__card-img">
+                        <img src="../../assets/img/cebal-microbit.png" alt="Visita virtual" class="oficina__card-img">
                         <p class="oficina__card-label">Visita virtual</p>
                     </div>
                 </div>
@@ -270,22 +281,22 @@
                 
                 <div class="oficina__projects">
                     <div class="oficina__card aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                        <img src="assets/img/perkinson0.png" alt="Perkinson" class="oficina__card-img">
+                        <img src="../../assets/img/perkinson0.png" alt="Perkinson" class="oficina__card-img">
                         <p class="oficina__card-label">Perkinson</p>
                     </div>
                     
                     <div class="oficina__card aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                        <img src="assets/img/adela0.png" alt="Adela Casacuberta" class="oficina__card-img">
+                        <img src="../../assets/img/adela0.png" alt="Adela Casacuberta" class="oficina__card-img">
                         <p class="oficina__card-label">Adela Casacuberta</p>
                     </div>
                     
                     <div class="oficina__card aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-                        <img src="assets/img/hema0.png" alt="Hematoma" class="oficina__card-img">
+                        <img src="../../assets/img/hema0.png" alt="Hematoma" class="oficina__card-img">
                         <p class="oficina__card-label">Hematoma</p>
                     </div>
                     
                     <div class="oficina__card aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                        <img src="assets/img/ela0.png" alt="Ela Monstruo" class="oficina__card-img">
+                        <img src="../../assets/img/ela0.png" alt="Ela Monstruo" class="oficina__card-img">
                         <p class="oficina__card-label">Ela Monstruo</p>
                     </div>
                 </div>
@@ -410,9 +421,9 @@
         document.querySelectorAll('.distorted-link').forEach(el => new DistortedLink(el));
     </script>
     
-    <!-- Pixel noise video overlay - Disabled (overlay removed) -->
+    <!-- Pixel noise video overlay - Disabled for performance -->
     <!--
-     <script>
+    <script>
     document.addEventListener('DOMContentLoaded', () => {
         const hero = document.querySelector('.hero');
         const video = document.getElementById('heroVideo');
@@ -424,7 +435,9 @@
     });
     </script>
     -->
-    
+
+    <!-- Gooey Cursor Effect (non-module for file:// compatibility) -->
+    <script src="js/gooey-cursor.js"></script>
 
 
 <!-- FOOTER START -->
@@ -465,9 +478,6 @@
 </footer>
 
 <!-- FOOTER END -->
-
-    <!-- Gooey Cursor Effect -->
-    <script src="js/gooey-cursor.js"></script>
 
 </body>
 </html>
