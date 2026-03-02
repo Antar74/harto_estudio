@@ -40,10 +40,12 @@
     <!-- ==================== -->
     <section class="hero" aria-label="Hero">
         <div class="hero__video-wrap">
+            <div class="hero__overlay"></div>
             <video id="heroVideo" class="hero__video" autoplay muted loop playsinline>
-                <source src="assets/videos/IMPROBABLE2-EAC-2025-v3.mp4" type="video/mp4">
+                <source src="assets/videos/h_e-hero-reel-v2.mp4" type="video/mp4">
                 <source src="assets/videos/h_e_hero-prueba1.webm" type="video/webm">
             </video>
+            <div class="hero__overlay" aria-hidden="true"></div>
             <div class="hero__background-rectangle" aria-hidden="true"></div>
         </div>
         <div class="hero__content">
@@ -410,8 +412,7 @@
         document.querySelectorAll('.distorted-link').forEach(el => new DistortedLink(el));
     </script>
     
-    <!-- Pixel noise video overlay - Disabled (overlay removed) -->
-    <!--
+    <!-- Pixel noise video overlay -->
      <script>
     document.addEventListener('DOMContentLoaded', () => {
         const hero = document.querySelector('.hero');
@@ -423,7 +424,6 @@
         }, {threshold: 0.1}).observe(hero);
     });
     </script>
-    -->
     
 
 
