@@ -260,7 +260,7 @@
     /* animation: grain-move 0.5s steps(3) infinite; */
     animation: none;
     mix-blend-mode: overlay;  
-    opacity: 0.4;
+    opacity: 0.3;
 }
 
 .hero__overlay:not(.is-visible)::before {
